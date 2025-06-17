@@ -12,6 +12,15 @@ class Asteroid(CircleShape):
         
     def update(self, dt):
         self.position += (self.velocity*dt)
+        
+        #added one to avoid problems at spawn
+        left_edge = 0 - ASTEROID_MAX_RADIUS - 1
+        right_edge = SCREEN_WIDTH + ASTEROID_MAX_RADIUS + 1
+        top_edge = 0 - ASTEROID_MAX_RADIUS - 1
+        bottom_edge = SCREEN_WIDTH + ASTEROID_MAX_RADIUS + 1
+        
+        if self.position.x < left_edge or self.position.x > right_edge or self.position.y < top_edge or self.position.y > bottom_edge:
+            self.kill()
     
     def split(self, counter):
         self.kill()

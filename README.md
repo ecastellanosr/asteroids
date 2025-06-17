@@ -9,14 +9,15 @@ Current functionalities:
 - 0.3 step of fire bullets, no extra type of shot
 - Asteroids can split when hit depending on size and get extra speed when doing so
 - Title
-
+- Point system 
+- asteroid regulation (out of screen kill)
 Functionalities that are being added:
 
 - Logo
 - Start game window with logo and button
 - lose game window with try again button
-- Point system
-- lifes system
+- Point system --
+- lives system
 - explosion sound
 - asteroid like asteorids (drawing)
 - Improved ship (drawing)
