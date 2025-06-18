@@ -11,6 +11,8 @@ Current functionalities:
 - Title
 - Point system 
 - asteroid regulation (out of screen kill)
+- asteroid like asteorids (drawing)
+
 Functionalities that are being added:
 
 - Logo
@@ -19,7 +21,7 @@ Functionalities that are being added:
 - Point system --
 - lives system
 - explosion sound
-- asteroid like asteorids (drawing)
+- asteroid like asteorids (drawing) --
 - Improved ship (drawing)
 - laser like bullets
 Outside of scope but may be added:

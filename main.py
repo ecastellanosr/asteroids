@@ -36,9 +36,13 @@ def main():
     counter = Points_counter(COUNTER_X,COUNTER_Y,
                              COUNTER_FONT,COUNTER_SIZE,
                              points_counter)
+    asteroid_images_list = []
+    for image in ASTEROID_IMAGES:
+        asteroid_image = pygame.image.load(ASTEROID_IMAGES_FOLDER+image).convert_alpha()
+        asteroid_images_list.append(asteroid_image)
     
     #asteroid field for all screen and asteroid generation
-    asteroid_field = AsteroidField()
+    asteroid_field = AsteroidField(asteroid_images_list)
     
     while True:
         for event in pygame.event.get():
