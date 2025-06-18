@@ -23,4 +23,7 @@ class CircleShape(pygame.sprite.Sprite):
     
     def check_collision(self, other):
         return self.position.distance_to(other.position) <= float(self.radius + other.radius)
-            
+    
+    #def check_shot_collision(self, shot):
+    #    right = self.position.x - self.radius
+    #    left = self.position.x

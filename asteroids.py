@@ -9,8 +9,9 @@ class Asteroid(CircleShape):
         self.asteroid_image = asteroid_image
         
     def draw(self,screen):
-        asteroid_image_scaled = pygame.transform.scale(self.asteroid_image,(self.radius,self.radius))
-        screen.blit(asteroid_image_scaled,(self.position.x,self.position.y))
+        asteroid_image_scaled = pygame.transform.scale(self.asteroid_image,(self.radius*2,self.radius*2))
+        screen.blit(asteroid_image_scaled,(self.position.x-self.radius,self.position.y-self.radius))
+        #hitbox
         #pygame.draw.circle(screen,"white",self.position,self.radius,2)
         
     def update(self, dt):
