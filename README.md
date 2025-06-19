@@ -12,17 +12,19 @@ Current functionalities:
 - Point system 
 - asteroid regulation (out of screen kill)
 - asteroid like asteorids (drawing)
+- Restart with return after death
+- life system (no counter)
+- Blink upon losing a life 
 
 Functionalities that are being added:
 
 - Logo
 - Start game window with logo and button
 - lose game window with try again button
-- Point system --
-- lives system
-- explosion sound
-- asteroid like asteorids (drawing) --
+- ~~Point system~~
+- ~~lives system~~
+- ~~asteroid like asteorids (drawing)~~
 - Improved ship (drawing)
-- laser like bullets
+- ~~laser like bullets~~
 Outside of scope but may be added:
 - extra enemies 
