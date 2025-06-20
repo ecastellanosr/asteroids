@@ -41,10 +41,8 @@ class Player(CircleShape):
     def update(self, dt):
         self.shooting_timer -= dt
         self.death_timer -= dt
-        print(self.blink_timer)
         self.blink_timer -= dt
         if self.death_timer > 0 and self.blink_timer < -PLAYER_BLINK_COOLDOWN:
-            print("new blink")
             self.blink_timer = PLAYER_BLINK_COOLDOWN
         keys = pygame.key.get_pressed()
         

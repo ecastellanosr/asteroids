@@ -55,6 +55,8 @@ def main():
                     game_state = True
                     for asteroid in asteroids:
                         asteroid.kill()
+                    for shot in shots:
+                        shot.kill()
                     player.restart()
                     counter.points = 0
                     
